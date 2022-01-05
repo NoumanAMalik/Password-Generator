@@ -9,6 +9,21 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Hello World</h1>
+        <div class="password-container">
+            <div class="password-header">
+                <div class="password">
+                    <span id="password"></span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <div class="password-body">
+                <div class="form-control"><label for="len">Password Length</label><input class="len" id="len" type="number" value="15" min="8" max="30"></div>
+                <div class="form-control"><label for="upper">Contain Uppercase Letters</label><input id="upper" type="checkbox"></div>
+                <div class="form-control"><label for="lower">Contain Lowercase Letters</label><input id="lower" type="checkbox"></div>
+                <div class="form-control"><label for="number">Contain Numbers</label><input id="number" type="checkbox"></div>
+                <div class="form-control"><label for="symbol">Contain Symbols</label><input id="symbol" type="checkbox"></div>
+                <button class="generate" id="generate">Generate Password</button>
+            </div>
+        </div>
     </body>
 </html>
